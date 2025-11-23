@@ -1,8 +1,11 @@
 from setuptools import setup,find_packages
+from typing import List
 
-def get_requirements() -> list[str]:
+#.\.venv\Scripts\activate
+
+def get_requirements() -> List[str]:
     
-    requirements_list = list[str] = []
+    requirements_list : List[str] = []
     return requirements_list
     
 
@@ -11,5 +14,5 @@ setup(
     version='0.0.1',
     author='Vishal',
     packages=find_packages(),
-    install_requires =  get_requirements() #['pymongo']
+    install_requires = get_requirements(), #['pymongo']
 )
